@@ -17,7 +17,7 @@ async function main() {
   const [signer] = await hre.ethers.getSigners();
   const contractFactory = await hre.ethers.getContractFactory("viinnsmoker");
   const contract = contractFactory.attach(contractAddress);
-  const functionName = "mint";
+  const functionName = "mintNFT";
   const setMessageTx = await sendShieldedTransaction(signer, contractAddress, contract.interface.encodeFunctionData(functionName),0)
   await setMessageTx.wait();
   console.log('Transaction Receipt: ', setMessageTx);
