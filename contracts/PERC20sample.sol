@@ -1,6 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.20;
 
+import "./PERC20.sol";
 import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
 
 contract viinnsmoker is ERC721 {
